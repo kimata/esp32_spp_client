@@ -57,7 +57,7 @@ static void reset_spp_status(void)
     spp_status[PROFILE_APP_ID].service_start_handle = 0;
     spp_status[PROFILE_APP_ID].service_end_handle = 0;
 
-    /* memset(spp_status[PROFILE_APP_ID].remote_bda, 0x00, sizeof(esp_bd_addr_t)); */
+    memset(spp_status[PROFILE_APP_ID].remote_bda, 0x00, sizeof(esp_bd_addr_t));
 
     if (spp_status[PROFILE_APP_ID].db) {
         free(spp_status[PROFILE_APP_ID].db);
