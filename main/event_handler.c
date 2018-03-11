@@ -15,7 +15,7 @@
 
 static const char spp_device_name[] = "ESP_SPP_SERVER";
 
-static struct gattc_profile_inst spp_status[PROFILE_NUM] = {
+static struct gatts_spp_status spp_status[PROFILE_NUM] = {
     [PROFILE_APP_ID] = {
         .gattc_cb = gattc_profile_event_handler,
         .gattc_if = ESP_GATT_IF_NONE,       /* Not get the gatt_if, so initial is ESP_GATT_IF_NONE */

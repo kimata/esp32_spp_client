@@ -1,7 +1,7 @@
 #include "esp_gattc_api.h"
 #include <esp_gap_ble_api.h>
 
-typedef struct gattc_profile_inst {
+typedef struct gatts_spp_status {
     esp_gattc_cb_t gattc_cb;
     uint16_t gattc_if;
     uint16_t app_id;
